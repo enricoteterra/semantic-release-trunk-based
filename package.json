@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "semantic-release": "export $(cat .env | xargs) && npx semantic-release"
+    "test": "echo \"no test\" && exit 0",
+    "semantic-release": "export $(cat .env | xargs) && npx semantic-release --dry-run false"
   },
   "author": "Enrico Teterra (TW)",
   "license": "ISC",
@@ -15,5 +15,8 @@
   },
   "devDependencies": {
     "semantic-release": "^17.0.8"
+  },
+  "release": {
+    "dryRun": false
   }
 }
