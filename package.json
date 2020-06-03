@@ -17,6 +17,8 @@
     "semantic-release": "^17.0.8"
   },
   "release": {
-    "dryRun": false
+    "branches": [
+      "master"
+    ]
   }
 }
